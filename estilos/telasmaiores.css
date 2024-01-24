@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+
+
+:root{
+    --corprincipal: #004ef5;
+    --corsecond:#009CF5;
+} 
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, var(--corprincipal),aqua);
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#login{
+    width: 900px;
+    height: 450px;
+    background-color: rgba(0, 195, 255, 0.212);
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 17px;
+    border: 2px solid black;
+}
+#formulario{
+    height:900px;
+    width: 450px;
+    align-self: flex-start;
+    translate: 0px 10px;
+}
+h1,p{
+    text-align: center;
+}
+h1{
+    font-size: 2em;
+    font-variant: small-caps;
+    margin-top: 20px;
+}
+p{
+    font-size: 1em;
+    text-align: justify;
+    width: 400px;
+    margin: auto;
+    margin-top: 15px;
+
+}
+#imagem{
+    background-image: url("../imagens/pexels-pixabay-237272.jpg");
+    height:450px;
+    width: 450px;
+    background-position: center center;
+    background-size: cover;
+    align-self: flex-end;
+    border-radius: 0px 17px 17px 0px;
+    border-left: 2px solid black;
+}
+#contitem{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+ }
+ .item{
+     background-color: var(--corprincipal);
+     width: 400px;
+     margin:auto;
+     height: 35px;
+     margin-bottom: 10px;
+     border-radius: 10px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding: 3px;
+     border: 1px solid black;
+ }
+ #lock{
+     scale: 1.2;
+     margin: 5px;
+     color: rgb(80, 219, 253);
+ }
+ #person{
+     scale: 1.3;
+     margin-top: 5px;
+     margin-left: 5px;
+     color:rgb(80,219,253) ;
+ }
+ input{
+     border-radius: 10px;
+     width: 90%;
+     border: 0px;
+     background-color: rgb(137, 237, 255);
+     padding-left: 5px;
+ }
+ #contbuttons{
+    display: flex;
+    flex-direction: row;
+    width: 325px;
+    margin-top: 10px;
+    align-self: center;
+    justify-content: space-between;
+ }
+ .buttons{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     background-color: #009CF5;
+     transition-duration: .5s;
+     width: 145px;
+   
+ }
+ .buttons input{
+     background-color: transparent;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: bold;
+     text-align: center;
+     font-size: 0.90em;
+     transition-duration: .5s;
+ 
+ }
+ #carta{
+     margin:0px;
+     translate: -3px 6px;
+     scale: 0.8;
+     transition-duration: .5s;
+ 
+ }
+ .buttons:hover{
+     background-color: #02287a;
+     scale: 1.1;
+ }
+ .buttons:hover > input {
+     color: white;
+ }
+ .buttons:hover >#carta{
+     color: white;
+ }
+ 
